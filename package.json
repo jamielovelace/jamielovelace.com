@@ -1,8 +1,8 @@
 {
-  "name": "nuxt-netlify-cms-starter",
+  "name": "jamielovelace",
   "version": "1.0.0",
-  "description": "A very Spartan boilerplate for using Netlify CMS/static content files with Nuxt.js.",
-  "author": "Henry Desroches <yo@henry.codes> (https://henry.codes)",
+  "description": "Personal portfolio website",
+  "author": "Jamie Lovelace <hi@jamielovelace.com> (https://jamielovelace.com)",
   "private": true,
   "scripts": {
     "dev": "nuxt",
