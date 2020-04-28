@@ -5,14 +5,14 @@
     <p class="c-project-card__description">{{ description }}</p>
     <p class="c-project-card__cta">Read Case Study</p>
     <div
-      v-if="image"
+      v-if="feature_image"
       v-lazy-container="{ selector: 'img' }"
       class="c-project-card__image"
     >
       <!-- <img
-        :data-loading="image.lqip"
-        :data-srcset="image.sizes.srcSet"
-        :data-src="image.src"
+        :data-loading="feature_image.lqip"
+        :data-srcset="feature_image.sizes.srcSet"
+        :data-src="feature_image.src"
         :alt="title"
       /> -->
     </div>

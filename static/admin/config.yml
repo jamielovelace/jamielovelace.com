@@ -42,15 +42,30 @@ collections:
             widget: object
             fields:
               - { label: 'Image', name: 'image', widget: 'image' }
-              - { label: 'Caption', name: 'caption', widget: 'string' }
+              - {
+                  label: 'Caption',
+                  name: 'caption',
+                  widget: 'string',
+                  required: false,
+                }
           - label: 'Dual Images'
             name: 'dual_images'
             widget: object
             fields:
               - { label: 'Image', name: 'image', widget: 'image' }
-              - { label: 'Caption', name: 'caption', widget: 'string' }
+              - {
+                  label: 'Caption',
+                  name: 'caption',
+                  widget: 'string',
+                  required: false,
+                }
               - { label: 'Image 2', name: 'image_2', widget: 'image' }
-              - { label: 'Caption 2', name: 'caption_2', widget: 'string' }
+              - {
+                  label: 'Caption 2',
+                  name: 'caption_2',
+                  widget: 'string',
+                  required: false,
+                }
           - label: 'Title and Pre'
             name: 'title_with_pre'
             widget: object
