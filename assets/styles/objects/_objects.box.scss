@@ -1,0 +1,20 @@
+/**
+ * Box
+ * Simple padded container
+ */
+
+.#{$namespace}o-box {
+  @include clearfix();
+  display: block;
+  padding: var(--spacing);
+  
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  &--flush { padding: 0; }
+  &--tiny  { padding: var(--spacing-tiny); }
+  &--small { padding: var(--spacing-small); }
+  &--large { padding: var(--spacing-large); }
+  &--huge  { padding: var(--spacing-huge); }
+}

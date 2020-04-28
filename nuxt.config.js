@@ -1,5 +1,6 @@
 export default {
   mode: 'universal',
+
   /*
    ** Headers of the page
    */
@@ -16,40 +17,59 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
+
   generate: {
-    routes: function() {
+    routes() {
       const fs = require('fs')
-      return fs.readdirSync('./assets/content/blog').map(file => {
+      return fs.readdirSync('./assets/content/projects').map((file) => {
         return {
-          route: `/blog/${file.slice(2, -5)}`,
-          payload: require(`./assets/content/blog/${file}`)
+          route: '/projects/' + file.slice(2, -5),
+          payload: require('./assets/content/projects/' + file)
         }
       })
     }
   },
+
   /*
    ** Customize the progress-bar color
    */
   loading: { color: '#fff' },
+
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['typeface-inter', '@/assets/styles/styles.scss'],
+
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [{ src: '~/plugins/vue-lazyload', ssr: false }],
+
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: [],
+  buildModules: [
+    // Doc: https://github.com/nuxt-community/eslint-module
+    '@nuxtjs/eslint-module',
+    '@aceforth/nuxt-optimized-images'
+  ],
+
+  optimizedImages: {
+    optimizeImages: true,
+    inlineImageLimit: -1
+  },
+
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/markdownit'],
+  modules: ['@nuxtjs/markdownit', '@nuxtjs/style-resources'],
   markdownit: {
     injected: true
   },
+  styleResources: {
+    scss: ['~assets/styles/tools/*.scss', '~assets/styles/settings/*.scss']
+  },
+
   /*
    ** Build configuration
    */

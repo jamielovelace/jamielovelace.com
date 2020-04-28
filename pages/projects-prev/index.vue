@@ -2,8 +2,7 @@
   <div>
     <hero-banner>
       <template v-slot:title>
-        Product Designer &amp; <br />
-        Front End Developer
+        Projects
       </template>
       <template v-slot:content>
         <p>
@@ -14,28 +13,7 @@
         </p>
       </template>
     </hero-banner>
-    <div class="o-wrapper o-wrapper--large">
-      <h4 class="u-color-dark u-margin-bottom-tiny">Projects</h4>
-    </div>
     <projects-feed :projects="projects" class="u-padding-bottom-large" />
-    <div class="o-wrapper o-wrapper--large u-margin-top-huge">
-      <div class="o-layout o-layout--huge">
-        <div class="o-layout__item u-2/5@tablet">
-          <h3>{{ about.title }}</h3>
-          <p>{{ about.body }}</p>
-        </div>
-        <div class="o-layout__item u-3/5@tablet">
-          <div v-lazy-container="{ selector: 'img' }">
-            <img
-              :data-loading="about.image.lqip"
-              :data-srcset="about.image.sizes.srcSet"
-              :data-src="about.image.src"
-              alt="Me"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 

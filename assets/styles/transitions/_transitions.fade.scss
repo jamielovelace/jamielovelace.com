@@ -1,0 +1,44 @@
+// Normal Fade
+
+.t-fade-enter-active, 
+.t-fade-leave-active {
+  transition: .5s;
+}
+.t-fade-enter, 
+.t-fade-leave-to {
+  opacity: 0;
+}
+
+// Fade from up to down
+.t-fade-vertical-enter-active, 
+.t-fade-vertical-leave-active {
+  transition: .3s;
+}
+.t-fade-vertical-enter, 
+.t-fade-vertical-leave-to {
+  opacity: 0;
+}
+.t-fade-vertical-enter {
+  transform: translateY(-10%);
+}
+.t-fade-vertical-leave-to {
+  transform: translateY(10%);
+}
+
+// Fade scale
+.t-fade-scale-enter-active, 
+.t-fade-scale-leave-active {
+  transition: .3s;
+  pointer-events: none;
+  transform-origin: 50% 50%;
+}
+.t-fade-scale-enter, 
+.t-fade-scale-leave-to {
+  opacity: 0;
+}
+.t-fade-scale-enter {
+  transform: scale(1.2) !important;
+}
+.t-fade-scale-leave-to {
+  transform: scale(0.8) !important;
+}

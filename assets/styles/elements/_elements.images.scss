@@ -1,0 +1,9 @@
+/**
+ * Images
+ */
+
+img {
+  max-width: 100%; // scale images if they dont fit in the parent
+  font-style: italic; // style alt text
+  vertical-align: middle; // get rid of whitespace that appears below images
+}

@@ -1,0 +1,10 @@
+.u-text {
+  &-small { font-size: var(--text-small); }
+  &-default { font-size: var(--text-default); }
+  &-large { font-size: var(--text-large); }
+  &-huge { font-size: var(--text-huge); }
+
+  &-scaled {
+    font-size: 125%;
+  }
+}

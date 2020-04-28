@@ -1,0 +1,44 @@
+/**
+ * Headings
+ */
+
+h1 {
+  font-size: var(--text-enormous);
+  line-height: 1.1;
+  font-weight: 900;
+  color: var(--color-dark);
+}
+
+h2 {
+  font-size: var(--text-huge);
+  line-height: var(--heading-line-height);
+  font-weight: 900;
+  color: var(--color-dark);
+}
+
+h3 {
+  font-size: var(--text-large);
+  line-height: var(--heading-line-height);
+  font-weight: 900;
+  color: var(--color-dark);
+}
+
+h4 {
+  font-size: var(--text-default);
+  line-height: var(--heading-line-height);
+  font-weight: 900;
+  color: var(--color-dark);
+}
+
+h5 {
+  font-size: var(--text-small);
+  line-height: var(--body-line-height);
+  margin-bottom: var(--spacing-tiny);
+  color: var(--color-dark);
+}
+
+h6 {
+  font-size: var(--text-small);
+  line-height: var(--body-line-height);
+  color: var(--color-dark);
+}

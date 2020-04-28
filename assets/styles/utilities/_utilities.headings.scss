@@ -1,0 +1,35 @@
+.u-h1 {
+  font-size: var(--text-enormous);
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+.u-h2 {
+  font-size: var(--text-huge);
+  line-height: var(--heading-line-height);
+  font-weight: 900;
+}
+
+.u-h3 {
+  font-size: var(--text-large);
+  line-height: var(--heading-line-height);
+  font-weight: 900;
+}
+
+.u-h4 {
+  font-size: var(--text-default);
+  line-height: var(--heading-line-height);
+  font-weight: 900;
+}
+
+.u-h5 {
+  font-size: var(--text-default);
+  line-height: var(--body-line-height);
+  font-weight: bold;
+}
+
+.u-h6 {
+  font-size: var(--text-small);
+  line-height: var(--body-line-height);
+  font-weight: bold;
+}

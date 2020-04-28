@@ -1,0 +1,8 @@
+:root {
+  --spacing: 1rem;
+  --spacing-tiny: calc(var(--spacing) * .25);
+  --spacing-small: calc(var(--spacing) * .5);
+  --spacing-large: calc(var(--spacing) * 1.5);
+  --spacing-huge: calc(var(--spacing) * 3);
+  --spacing-enourmous: calc(var(--spacing) * 5);
+}

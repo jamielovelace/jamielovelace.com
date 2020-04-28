@@ -1,0 +1,24 @@
+/**
+ * Page level set up
+ */
+
+html {
+  font-family: var(--font-family-primary);
+  font-size: var(--text-base-size);
+  line-height: var(--body-line-height);
+  min-height: 100%; // Always fill the viewport
+  color: var(--color-text);
+  background-color: var(--color-tertiary-light);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// ::selection {
+//   background: var(--color-primary);
+//   color: #fff; /* WebKit/Blink Browsers */
+// }
+// ::-moz-selection {
+//   background: var(--color-primary);
+//   color: #fff;
+// }

@@ -1,0 +1,7 @@
+.c-heading {
+  &--bordered {
+    border-bottom: 2px solid var(--color-branding);
+    padding-bottom: var(--spacing);
+    margin-bottom: var(--spacing-large);
+  }
+}

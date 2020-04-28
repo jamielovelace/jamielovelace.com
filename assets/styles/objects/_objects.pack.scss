@@ -1,0 +1,88 @@
+/**
+ * Pack
+ * Display items in a row next
+ */
+
+.#{$namespace}o-pack {
+  $self: &;
+  display: flex;
+
+  &--inline {
+    display: inline-flex;
+  }
+
+  // Space items evenly 
+  &--justify {
+    #{$self}__item {
+      flex-basis: 0;
+      flex-grow: 1;
+    }
+  }
+
+  // Alignment
+  &--center {
+    align-items: center;
+  }
+  &--bottom {
+    align-items: flex-end;
+  }
+  
+  
+  // Direction 
+  &--reverse {
+    flex-direction: row-reverse;
+  }
+
+  // flow items on new lines
+  &--wrap {
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    &--grow {
+      flex-grow: 1;
+    }
+    &--shrink {
+      flex-shrink: 0;
+    }
+    &--no-width {
+      flex-basis: 0;
+    }
+
+    &--top {
+      align-self: flex-start;
+    }
+
+    // Spacing
+    #{$self}--tiny & {
+      &:not(:first-child) {
+        margin-left: var(--spacing-tiny);
+      }
+    }
+
+    #{$self}--small & {
+      &:not(:first-child) {
+        margin-left: var(--spacing-small);
+      }
+    }
+
+    #{$self}--default & {
+      &:not(:first-child) {
+        margin-left: var(--spacing);
+      }
+    }
+
+    #{$self}--large & {
+      &:not(:first-child) {
+        margin-left: var(--spacing-large);
+      }
+    }
+
+    #{$self}--huge & {
+      &:not(:first-child) {
+        margin-left: var(--spacing-huge);
+      }
+    }
+
+  }
+}

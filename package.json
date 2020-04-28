@@ -12,16 +12,44 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/xdesro/nuxt-netlify-cms-starter#readme"
+    "url": "https://github.com/jamielovelace/jamielovelace.com#readme"
   },
   "license": "MIT",
   "dependencies": {
     "@nuxtjs/markdownit": "^1.2.6",
-    "nuxt": "^2.11.0"
+    "aos": "^2.3.4",
+    "core-js": "2",
+    "nuxt": "^2.12.2",
+    "typeface-inter": "^3.12.0",
+    "v-lazy-image": "^1.4.0",
+    "vue-lazyload": "^1.3.3"
   },
   "devDependencies": {
-    "eslint-config-prettier": "^4.1.0",
-    "eslint-plugin-prettier": "^3.0.1",
-    "prettier": "^1.16.4"
+    "@aceforth/nuxt-optimized-images": "^1.0.0",
+    "@babel/runtime-corejs2": "^7.9.2",
+    "@nuxtjs/eslint-config": "^2.0.0",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.1.0",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "eslint-plugin-prettier": "^3.1.2",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^8.0.0",
+    "imagemin-svgo": "^7.1.0",
+    "jest": "^24.1.0",
+    "lqip-loader": "^2.2.0",
+    "node-sass": "^4.13.1",
+    "prettier": "^1.19.1",
+    "responsive-loader": "^1.2.0",
+    "sass-loader": "^8.0.2",
+    "sass-mq": "^5.0.1",
+    "sharp": "^0.25.2",
+    "vue-jest": "^4.0.0-0",
+    "webp-loader": "^0.6.0"
   }
 }

@@ -1,0 +1,9 @@
+.#{$namespace}o-list-inline {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+
+  &__item {
+    display: inline-block;
+  }
+}

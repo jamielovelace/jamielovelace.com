@@ -6,12 +6,12 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: 'assets/content/blog'
+  - name: 'project'
+    label: 'Project'
+    folder: 'assets/content/projects'
     create: true
     format: 'json'
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{slug}}'
     editor:
       preview: false
     fields:

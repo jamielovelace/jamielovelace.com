@@ -1,0 +1,18 @@
+:root {
+  --color-branding: --color-primary;
+  --color-primary: hsl(250, 100%, 60%);
+  --color-primary-light: hsl(248, 83%, 75%);
+  --color-secondary: hsl(190, 100%, 70%);
+  --color-secondary-light: hsl(190, 100%, 87.5%);
+  --color-tertiary: hsl(10, 69%, 75%);
+  --color-tertiary-light: hsl(10, 69%, 97%);
+
+  --color-text: #666;
+  --color-dark: #000;
+
+  --color-grey: #ccc;
+
+  --color-danger: hsl(349, 74%, 53%);
+  --color-success: hsl(130, 48%, 54%);
+  --color-warning: hsl(36, 77%, 55%);
+}

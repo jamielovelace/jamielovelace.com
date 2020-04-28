@@ -1,0 +1,25 @@
+.c-btn {
+  display: inline-flex;
+  padding: var(--spacing-small) var(--spacing-large);
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  font-family: var(--font-family-secondary);
+  font-weight: normal;
+  font-style: italic;
+  letter-spacing: 0.05em;
+  background-color: var(--color-secondary);
+  line-height: var(--body-line-height);
+  outline: 0;
+  border: 0;
+  color: #fff;
+  text-align: center;
+  transition: .2s;
+
+  &:hover {
+    background-color: var(--color-secondary-dark);
+  }
+
+  &--large {
+    padding: var(--spacing) var(--spacing-huge);
+  }
+}

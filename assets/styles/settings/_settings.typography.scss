@@ -1,0 +1,47 @@
+:root {
+  --font-family-primary: 'Inter', sans-serif;
+  --font-family-secondary: serif;
+
+  // body font size
+  --text-base-size: 1em;
+
+  // type scale
+  --text-scale-ratio: 1.2;
+  --text-tiny: calc(1em / (var(--text-scale-ratio) * var(--text-scale-ratio)));
+  --text-small: calc(1em / var(--text-scale-ratio));
+  --text-default: calc(1em * var(--text-scale-ratio));
+  --text-large: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-huge: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-enormous: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-collosal: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+
+  // line-height
+  --body-line-height: 1.4;
+  --heading-line-height: 1.2;
+}
+@include mq($from: tablet) {
+  :root {
+    --text-enormous: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-collosal: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  }
+}
+@include mq($from: smallDesktop) {
+  :root {
+    --text-scale-ratio: 1.25;
+    --text-enormous: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-collosal: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  }
+}
+@include mq($from: desktop) {
+  :root {
+    // you can manage typography editing only these 2 variables
+    --text-base-size: 1.125em;
+    --text-scale-ratio: 1.3;
+  }
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    --font-family-primary: 'Inter Var', sans-serif;
+  }
+}

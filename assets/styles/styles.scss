@@ -1,0 +1,114 @@
+/***
+ * headStart Base
+ */
+
+
+// Config bits
+$namespace: ''; // global name space to prepend styles if needed
+
+
+// TOOLS 
+@import "tools/tools.clearfix";
+@import "tools/tools.mq";
+@import "tools/tools.scrim-gradient";
+
+
+// SETTINGS / CUSTOM PROPERTIES
+@import "settings/settings.general";
+@import "settings/settings.typography";
+@import "settings/settings.spacing";
+@import "settings/settings.colors";
+
+
+// GENERIC
+@import "generic/generic.fonts";
+@import "generic/generic.normalize";
+@import "generic/generic.shared";
+
+
+// ELEMENTS
+@import "elements/elements.page";
+@import "elements/elements.headings";
+@import "elements/elements.images";
+
+
+// OBJECTS
+// Uncomment and add to this section as necessary.
+@import "objects/objects.wrapper";
+@import "objects/objects.list-bare";
+@import "objects/objects.list-inline";
+@import "objects/objects.layout";
+@import "objects/objects.box";
+@import "objects/objects.pack";
+@import "objects/objects.block";
+@import "objects/objects.ratio";
+
+
+// COMPONENTS
+// Build and include your project’s UI components here.
+@import "components/components.buttons";
+@import "components/components.icons";
+@import "components/components.form";
+@import "components/components.heading";
+@import "components/components.link";
+@import "components/components.user-content";
+
+
+// TRANSITIONS
+@import "transitions/transitions.fade";
+@import "transitions/transitions.aos";
+
+
+// UTILITIES
+@import "utilities/utilities.headings";
+@import "utilities/utilities.text-align";
+@import "utilities/utilities.text-size";
+@import "utilities/utilities.spacings";
+@import "utilities/utilities.widths";
+@import "utilities/utilities.colors";
+// @import "utilities/utilities.responsive-spacings";
+// @import "utilities/utilities.print";
+// @import "utilities/utilities.hide";
+
+.page-enter-active,
+.page-leave-active {
+  opacity: 1;
+  transition: opacity .2s;
+  animation-duration: .3s;
+  animation-fill-mode: both;
+}
+
+.page-enter-active {
+  animation-name: pageFadeIn;
+  animation-timing-function: ease-out;
+}
+
+.page-leave-active {
+  animation-name: pageFadeOut;
+  animation-timing-function: ease-out;
+}
+
+.page-enter, .page-leave-to {
+  opacity: 0;
+}
+
+
+@keyframes pageFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pageFadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}

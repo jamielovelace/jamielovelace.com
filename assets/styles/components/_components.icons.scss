@@ -1,0 +1,23 @@
+.c-icon {
+  fill: currentColor;
+
+  &--block {
+    display: block;
+  }
+
+  &--standard {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  &--large {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &--circled {
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    // padding: var(--spacing);
+  }
+}

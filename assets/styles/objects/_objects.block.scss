@@ -1,0 +1,8 @@
+.o-block {
+  display: block;
+
+  &__img {
+    margin-bottom: var(--spacing);
+    display: block;
+  }
+}
