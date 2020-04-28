@@ -1,7 +1,48 @@
 {
   "title": "Akero",
   "date": "2020-04-28T06:00:00.000Z",
-  "tags": ["Product Design", "Front-end Development", "UX Research"],
+  "tags": [
+    "Product Design",
+    "Front-end Development",
+    "UX Research"
+  ],
   "description": "CRM & Advertising platform aimed at the education sector. Akero is a large CRM system which includes a form builder, landing page builder, automation and an advertising platform.",
-  "body": "## some Post\n\n### Some subheader\n\nLorem ipsum dolor websites amet.\n\n> A blockquote from a wise person."
+  "body": "## some Post\n\n### Some subheader\n\nLorem ipsum dolor websites amet.\n\n> A blockquote from a wise person.",
+  "feature_image": "/uploads/me.jpg",
+  "sections": [
+    {
+      "type": "content",
+      "body": "## What is it\n\nAkero is a suite of tools aimed primarily at Universities and higher education to drive their recruitment process. It includes; a form builder, landing page builder, marketing automation, CRM, advertising reporting along with much more.\n\n## My Role\n\nI was hired to be the lead designer and take hold of front end  developer as it was currently being done by the backend devs.  \n\n## The product\n\nAbout 6 months into my role the idea of what Akero was had already started to drastically change, it was previously just used for capturing form submissions through facebook pages. The old design worked just fine for this, but there was going to be a plethora of new features coming so the decision was made to give the platform a redesign.\n\nThe previous design was very design heavy, so my first through was to clean it up by reducing the colour pallete and removing a lot of the visual noise."
+    },
+    {
+      "type": "dual_images",
+      "image": "/uploads/me.jpg",
+      "image_2": "/uploads/me.jpg",
+      "caption": "test",
+      "caption_2": "test"
+    },
+    {
+      "type": "content",
+      "body": "The redesign was a difficult process due to having to maintain the current verison along with adding new features too. This meant having to combine the two seperate versions so they didnt diverge."
+    },
+    {
+      "type": "title_with_pre",
+      "pre_title": "Feature",
+      "title": "Submissions"
+    },
+    {
+      "type": "content",
+      "body": "The most used part of the system is the submissions table, so after studying how some users use this table we ran some prototypes of the new table types. Each user had their own use cases for each column in the table, so removing columns was not an option, we opted for a side scrolling table with sticky table headers along with options to customise which columns you’d see and the order in which they are displayed.\n\nGiving the users the freedom to choose how they see their data increased user satisfaction and we were being sent feedback on how easy the table is to use. Great news!"
+    },
+    {
+      "type": "image",
+      "image": "/uploads/me.jpg",
+      "caption": "test"
+    },
+    {
+      "type": "title_with_pre",
+      "pre_title": "Feature",
+      "title": "Page Builder"
+    }
+  ]
 }
