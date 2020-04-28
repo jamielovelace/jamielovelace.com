@@ -49,7 +49,7 @@ export default {
   },
   data() {
     return {
-      projects: [
+      oldprojects: [
         {
           title: 'Akero',
           tags: ['Product Design', 'Front-end Development', 'UX Research'],
@@ -106,6 +106,11 @@ export default {
           src: require('~/assets/images/me.jpg')
         }
       }
+    }
+  },
+  computed: {
+    projects() {
+      return this.$store.state.projects
     }
   }
 }

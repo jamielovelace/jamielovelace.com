@@ -1,16 +1,20 @@
 <template>
   <nuxt-link :to="`/projects/${slug}`" class="c-project-card">
     <h1 class="c-project-card__title u-h3">{{ title }}</h1>
-    <p class="c-project-card__tags">{{ tags.join(', ') }}</p>
+    <p v-if="tags" class="c-project-card__tags">{{ tags.join(', ') }}</p>
     <p class="c-project-card__description">{{ description }}</p>
     <p class="c-project-card__cta">Read Case Study</p>
-    <div v-lazy-container="{ selector: 'img' }" class="c-project-card__image">
-      <img
+    <div
+      v-if="image"
+      v-lazy-container="{ selector: 'img' }"
+      class="c-project-card__image"
+    >
+      <!-- <img
         :data-loading="image.lqip"
         :data-srcset="image.sizes.srcSet"
         :data-src="image.src"
         :alt="title"
-      />
+      /> -->
     </div>
   </nuxt-link>
 </template>
