@@ -6,14 +6,7 @@
         :key="$index"
         class="c-projects-feed__item"
       >
-        <project-card
-          :slug="project.slug"
-          :title="project.title"
-          :description="project.description"
-          :tags="project.tags"
-          :image="project.image"
-        >
-        </project-card>
+        <project-card :project="project"> </project-card>
       </div>
       <div class="c-projects-feed__item c-projects-feed__item--spacer"></div>
     </div>

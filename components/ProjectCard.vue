@@ -1,20 +1,22 @@
 <template>
-  <nuxt-link :to="`/projects/${slug}`" class="c-project-card">
-    <h1 class="c-project-card__title u-h3">{{ title }}</h1>
-    <p v-if="tags" class="c-project-card__tags">{{ tags.join(', ') }}</p>
-    <p class="c-project-card__description">{{ description }}</p>
+  <nuxt-link :to="`/projects/${project.slug}`" class="c-project-card">
+    <h1 class="c-project-card__title u-h3">{{ project.title }}</h1>
+    <p v-if="project.tags" class="c-project-card__tags">
+      {{ project.tags.join(', ') }}
+    </p>
+    <p class="c-project-card__description">{{ project.description }}</p>
     <p class="c-project-card__cta">Read Case Study</p>
     <div
-      v-if="feature_image"
+      v-if="optimisedImage"
       v-lazy-container="{ selector: 'img' }"
       class="c-project-card__image"
     >
-      <!-- <img
-        :data-loading="feature_image.lqip"
-        :data-srcset="feature_image.sizes.srcSet"
-        :data-src="feature_image.src"
-        :alt="title"
-      /> -->
+      <img
+        :data-loading="optimisedImage.lqip"
+        :data-srcset="optimisedImage.sizes.srcSet"
+        :data-src="optimisedImage.src"
+        :alt="project.title"
+      />
     </div>
   </nuxt-link>
 </template>
@@ -22,28 +24,28 @@
 <script>
 export default {
   props: {
-    slug: {
-      type: String,
-      required: true
-    },
-    title: {
-      type: String,
-      required: true
-    },
-    tags: {
-      type: Array,
-      default: () => {
-        return []
-      }
-    },
-    description: {
-      type: String,
-      default: ''
-    },
-    image: {
+    project: {
       type: Object,
-      default: () => {
-        return {}
+      required: true
+    }
+  },
+  computed: {
+    optimisedImage() {
+      // check if it exists in the uploads folder, then optimise to sizes etc
+      if (this.project.feature_image.indexOf('/uploads') === 0) {
+        return {
+          webp: require(`~/assets${this.project.feature_image}?webp`),
+          lqip: require(`~/assets${this.project.feature_image}?resize&size=50`),
+          sizes: require(`~/assets${this.project.feature_image}?resize&sizes[]=300&sizes[]=600&sizes[]=1000`),
+          src: require(`~/assets${this.project.feature_image}`)
+        }
+      }
+      // if not just provide the src url
+      return {
+        src: this.project.feature_image,
+        webp: '',
+        sizes: { srcSet: '' },
+        lqip: ''
       }
     }
   }

@@ -3,7 +3,7 @@
  * Simple padded container
  */
 
-.#{$namespace}o-box {
+.o-box {
   @include clearfix();
   display: block;
   padding: var(--spacing);
