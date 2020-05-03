@@ -1,13 +1,17 @@
 <template>
-  <div class="o-wrapper o-wrapper--small" v-html="content"></div>
+  <div class="o-wrapper o-wrapper--tiny">
+    <div v-html="$md.render(content.body)" />
+  </div>
 </template>
 
 <script>
 export default {
   props: {
     content: {
-      type: String,
-      default: undefined
+      type: Object,
+      default() {
+        return {}
+      }
     }
   }
 }

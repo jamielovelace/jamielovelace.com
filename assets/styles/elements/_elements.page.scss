@@ -9,6 +9,7 @@ html {
   min-height: 100%; // Always fill the viewport
   color: var(--color-text);
   background-color: var(--color-tertiary-light);
+  scroll-behavior: smooth;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

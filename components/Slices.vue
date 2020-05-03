@@ -1,14 +1,21 @@
 <template>
-  <div class="c-slice">
-    <slice-content v-if="slice.type === 'content'" :content="slice.content" />
-    <slice-content-columns v-if="slice.type === 'content_columns'" />
+  <div class="c-slice" :class="`c-slice--${slice.type}`">
+    <slice-content v-if="slice.type === 'content'" :content="slice" />
+    <slice-content-columns
+      v-if="slice.type === 'content_columns'"
+      :content="slice"
+    />
     <slice-content-columns-image
       v-if="slice.type === 'content_columns_image'"
+      :content="slice"
     />
-    <slice-title v-if="slice.type === 'title'" />
-    <slice-image v-if="slice.type === 'image'" />
-    <slice-images-x2 v-if="slice.type === 'images_x2'" />
-    <slice-image-gallery v-if="slice.type === 'image_gallery'" />
+    <slice-title v-if="slice.type === 'title_with_pre'" :content="slice" />
+    <slice-image v-if="slice.type === 'image'" :content="slice" />
+    <slice-images-x2 v-if="slice.type === 'dual_images'" :content="slice" />
+    <slice-image-gallery
+      v-if="slice.type === 'image_gallery'"
+      :content="slice"
+    />
   </div>
 </template>
 
@@ -43,7 +50,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.c-slice + .c-slice {
+.c-slice:not(.c-slice--title_with_pre) + .c-slice {
   margin-top: var(--spacing-huge);
 }
 </style>

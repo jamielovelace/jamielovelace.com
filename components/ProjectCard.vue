@@ -64,7 +64,7 @@ export default {
   color: var(--color-text);
   transform: scale(1);
   backface-visibility: hidden;
-  transition: all 0.2s ease-out;
+  transition: all 0.2s ease;
   -webkit-font-smoothing: subpixel-antialiased;
 
   &__title {
@@ -82,7 +82,7 @@ export default {
   }
 
   &__image {
-    margin-top: var(--spacing);
+    margin-top: auto;
     width: 100%;
     overflow: hidden;
     img {

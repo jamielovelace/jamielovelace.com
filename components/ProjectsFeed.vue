@@ -54,6 +54,8 @@ export default {
     min-width: 70vw;
     padding-left: var(--spacing-large);
     display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
     @include mq($from: smallDesktop) {
       min-width: 33.33%;
       padding-right: 0;

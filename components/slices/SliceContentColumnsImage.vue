@@ -1,13 +1,15 @@
 <template>
-  <div v-html="content"></div>
+  <div v-html="$md.render(project.body)" />
 </template>
 
 <script>
 export default {
   props: {
     content: {
-      type: String,
-      default: undefined
+      type: Object,
+      default() {
+        return {}
+      }
     }
   }
 }

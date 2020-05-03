@@ -6,8 +6,10 @@
 export default {
   props: {
     content: {
-      type: String,
-      default: undefined
+      type: Object,
+      default() {
+        return {}
+      }
     }
   }
 }
