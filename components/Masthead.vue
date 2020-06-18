@@ -49,6 +49,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   @include mq($from: smallDesktop) {
+    padding-top: var(--spacing-large);
     padding-left: var(--spacing-large);
     padding-right: var(--spacing-large);
   }
@@ -96,20 +97,21 @@ export default {
       display: inline-block;
       font-weight: 900;
       text-decoration: none;
-      color: var(--color-dark);
+      color: var(--color-light);
       padding: var(--spacing-tiny) var(--spacing-small);
+      border-radius: var(--border-radius);
       transition: 0.2s ease;
-      border-bottom: 5px solid transparent;
-      border-top: 5px solid transparent;
 
       &:hover {
-        color: var(--color-primary);
+        background-color: rgba(0, 0, 0, 0.125);
+      }
+      &:active {
+        transform: scale(0.9);
       }
 
       .is-active &,
       &.is-active {
-        color: var(--color-primary);
-        border-bottom-color: var(--color-primary);
+        background-color: rgba(0, 0, 0, 0.125);
       }
     }
   }

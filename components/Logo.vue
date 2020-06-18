@@ -52,7 +52,6 @@
         y1="11.5"
         x2="98"
         y2="11.5"
-        stroke="black"
         stroke-width="3"
       />
     </svg>
@@ -71,10 +70,10 @@ export default {
 <style lang="scss" scoped>
 .c-logo {
   height: auto;
-  fill: var(--color-dark);
+  fill: var(--color-light);
 
   &__line {
-    fill: var(--color-dark);
+    stroke: var(--color-secondary);
     // stroke-dasharray: 31;
     // stroke-dashoffset: 0;
     // animation: dash 0.75s ease infinite;

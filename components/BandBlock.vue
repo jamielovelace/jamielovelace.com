@@ -1,5 +1,7 @@
 <template>
-  <div class="c-band-block"></div>
+  <div class="c-band-block">
+    <div class="c-band-block__inner"></div>
+  </div>
 </template>
 
 <script>
@@ -15,13 +17,16 @@ export default {
 
 <style lang="scss" scoped>
 .c-band-block {
-  width: 0;
-  height: 0;
-  border-top: 120vh solid var(--color-secondary-light);
-  border-right: 60vw solid transparent;
+  overflow: hidden;
   position: absolute;
+  z-index: -1;
   top: 0;
   left: 0;
-  z-index: -1;
+  width: 100%;
+
+  &__inner {
+    border-top: 95vh solid var(--color-primary);
+    border-right: 150vw solid transparent;
+  }
 }
 </style>

@@ -61,7 +61,7 @@ export default {
   flex-direction: column;
   padding: var(--spacing-large);
   padding-bottom: 0;
-  color: var(--color-text);
+  color: #666;
   transform: scale(1);
   backface-visibility: hidden;
   transition: all 0.2s ease;
@@ -79,6 +79,7 @@ export default {
   &__cta {
     font-weight: bold;
     color: var(--color-dark);
+    margin-bottom: var(--spacing-large);
   }
 
   &__image {

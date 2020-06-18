@@ -1,6 +1,18 @@
-
 .c-user-content {
   a {
-    // @extend .c-link;
+    color: inherit;
+    text-decoration: none;
+    background: 
+      linear-gradient(180deg, var(--color-secondary-alpha) 0, var(--color-secondary-alpha)),
+      linear-gradient(180deg, var(--color-secondary) 0, var(--color-secondary));
+    background-position: left bottom 0.1em, left bottom 0.1em;
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em, 0 0.2em;
+    transition: 0.2s ease;
+
+    &:hover,
+    &:focus {
+      background-size: 100% 0.2em, 100% 0.2em;
+    }
   }
 }

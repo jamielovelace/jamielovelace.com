@@ -31,6 +31,14 @@ export default {
   },
 
   /*
+   ** Router
+   */
+  router: {
+    linkActiveClass: 'is-active',
+    linkExactActiveClass: 'is-active-exact'
+  },
+
+  /*
    ** Customize the progress-bar color
    */
   loading: { color: '#fff' },
@@ -43,7 +51,10 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '~/plugins/vue-lazyload', ssr: false }],
+  plugins: [
+    { src: '~/plugins/vue-lazyload', ssr: false },
+    { src: '~/plugins/aos', ssr: false }
+  ],
 
   /*
    ** Nuxt.js dev-modules

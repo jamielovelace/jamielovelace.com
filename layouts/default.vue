@@ -27,6 +27,7 @@ export default {
 .c-main {
   padding-bottom: var(--spacing-enourmous);
 }
+
 img[lazy] {
   transition: filter 0.5s ease-out;
 }

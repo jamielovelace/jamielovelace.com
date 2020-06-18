@@ -1,10 +1,18 @@
 <template>
   <div class="c-hero-banner">
     <div class="c-hero-banner__body">
-      <h1 class="c-hero-banner__title">
+      <h1
+        class="c-hero-banner__title"
+        data-aos="fade-left"
+        data-aos-delay="100"
+      >
         <slot name="title" />
       </h1>
-      <div class="c-hero-banner__content c-user-content">
+      <div
+        class="c-hero-banner__content c-user-content"
+        data-aos="fade-left"
+        data-aos-delay="200"
+      >
         <slot name="content" />
       </div>
     </div>
@@ -34,10 +42,11 @@
   }
   &__title {
     font-size: var(--text-collosal);
+    color: var(--color-light);
   }
 
   &__content {
-    color: var(--color-dark);
+    color: var(--color-light);
     font-size: var(--text-default);
   }
 }

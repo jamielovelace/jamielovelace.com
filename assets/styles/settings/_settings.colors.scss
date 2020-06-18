@@ -1,13 +1,16 @@
 :root {
   --color-branding: --color-primary;
-  --color-primary: hsl(250, 100%, 60%);
+  --color-primary: hsl(248, 100%, 54%);
+  --color-primary: hsl(248, 100%, 54%);
   --color-primary-light: hsl(248, 83%, 75%);
-  --color-secondary: hsl(190, 100%, 70%);
+  --color-secondary: hsl(190, 100%, 50%);
   --color-secondary-light: hsl(190, 100%, 87.5%);
-  --color-tertiary: hsl(10, 69%, 75%);
-  --color-tertiary-light: hsl(10, 69%, 97%);
+  --color-secondary-alpha: rgba(0, 213, 255, .5);
+  --color-tertiary: hsl(30, 100%, 61%);
+  --color-tertiary-light: hsl(30, 100%, 95%);
 
-  --color-text: #666;
+  --color-text: #444;
+  --color-light: #fff;
   --color-dark: #000;
 
   --color-grey: #ccc;

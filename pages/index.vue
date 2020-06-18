@@ -2,13 +2,18 @@
   <div>
     <hero-banner>
       <template v-slot:title>
-        Product Designer &amp; <br />
-        Front End Developer
+        Front End Developer &amp;
+        <br />
+        Product Designer
       </template>
       <template v-slot:content>
         <p>
           Currently senior front end developer at
-          <a href="https://akerolabs.com" target="_blank" rel="nofollow"
+          <a
+            class="c-link"
+            href="https://akerolabs.com"
+            target="_blank"
+            rel="nofollow"
             >Akero</a
           >
         </p>
