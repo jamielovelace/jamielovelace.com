@@ -1,11 +1,19 @@
 <template>
-  <nuxt-link :to="`/projects/${project.slug}`" class="c-project-card">
-    <h1 class="c-project-card__title u-h3">{{ project.title }}</h1>
-    <p v-if="project.tags" class="c-project-card__tags">
-      {{ project.tags.join(', ') }}
-    </p>
-    <p class="c-project-card__description">{{ project.description }}</p>
-    <p class="c-project-card__cta">Read Case Study</p>
+  <nuxt-link
+    :to="`/projects/${project.slug}`"
+    class="c-project-card"
+    :class="{ 'c-project-card--featured': featured }"
+  >
+    <div class="c-project-card__content">
+      <h1 class="c-project-card__title u-h3">{{ project.title }}</h1>
+      <p v-if="project.tags" class="c-project-card__tags">
+        {{ project.tags.join(', ') }}
+      </p>
+      <p v-if="showDescription" class="c-project-card__description">
+        {{ project.description }}
+      </p>
+      <p v-if="showDescription" class="c-project-card__cta">Read Case Study</p>
+    </div>
     <div
       v-if="optimisedImage"
       v-lazy-container="{ selector: 'img' }"
@@ -27,6 +35,14 @@ export default {
     project: {
       type: Object,
       required: true
+    },
+    featured: {
+      type: Boolean,
+      default: false
+    },
+    showDescription: {
+      type: Boolean,
+      default: true
     }
   },
   computed: {
@@ -54,6 +70,7 @@ export default {
 
 <style lang="scss" scoped>
 .c-project-card {
+  $self: &;
   background-color: #fff;
   text-decoration: none;
   border-radius: var(--border-radius-large);
@@ -69,7 +86,7 @@ export default {
 
   &__title {
     margin-bottom: var(--spacing-tiny);
-    color: var(--color-dark);
+    color: var(--color-primary);
   }
 
   &__tags {
@@ -98,6 +115,19 @@ export default {
       0 70px 80px rgba(0, 0, 0, 0.06);
 
     transform: scale(1.02);
+  }
+
+  &--featured {
+    flex-direction: row;
+
+    #{$self}__content {
+      flex-basis: 50%;
+      margin-right: var(--spacing-large);
+    }
+
+    #{$self}__image {
+      width: 50%;
+    }
   }
 }
 </style>
