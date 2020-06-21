@@ -3,7 +3,7 @@ export const state = () => ({
 })
 
 export const mutations = {
-  setProjects(state, list) {
+  SET_PROJECTS(state, list) {
     state.projects = list
   }
 }
@@ -20,6 +20,6 @@ export const actions = {
       res.slug = key.slice(2, -5)
       return res
     })
-    await commit('setProjects', projects)
+    await commit('SET_PROJECTS', projects)
   }
 }
