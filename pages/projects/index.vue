@@ -1,20 +1,26 @@
 <template>
   <div>
     <hero-banner>
-      <template v-slot:title>
+      <template #title>
         Projects
       </template>
+      <template #content>
+        <p>A selection of projects I've worked on recently</p>
+      </template>
     </hero-banner>
-    <div class="o-wrapper">
+    <div class="o-wrapper o-wrapper--large">
       <div class="c-projects">
         <div
           v-for="(project, index) in projects"
           :key="index"
           class="c-projects__item"
+          data-aos="fade-up"
         >
           <project-card :project="project" :featured="true"> </project-card>
         </div>
       </div>
+
+      <div></div>
     </div>
   </div>
 </template>
@@ -36,6 +42,7 @@ export default {
 
 <style lang="scss" scoped>
 .c-projects {
+  max-width: 950px;
   &__item {
     padding-bottom: var(--spacing-large);
   }

@@ -1,7 +1,7 @@
 <template>
   <div class="o-wrapper o-wrapper--large">
     <responsive-image
-      class="u-1/1"
+      class="u-1/1 c-styled-image"
       :image="content.image"
       :alt="content.caption"
     />

@@ -1,12 +1,12 @@
 <template>
   <div>
     <hero-banner>
-      <template v-slot:title>
+      <template #title>
         Front End Developer &amp;
         <br />
         Product Designer
       </template>
-      <template v-slot:content>
+      <template #content>
         <p>
           Currently senior front end developer at
           <a
@@ -19,11 +19,16 @@
         </p>
       </template>
     </hero-banner>
-    <div class="o-wrapper o-wrapper--large">
-      <h4 class="u-color-dark u-margin-bottom-tiny">Projects</h4>
+    <div data-aos="fade-up">
+      <div class="o-wrapper o-wrapper--large">
+        <h4 class="u-margin-bottom-tiny u-color-light">Projects</h4>
+      </div>
+      <projects-feed :projects="projects" class="u-padding-bottom-huge" />
     </div>
-    <projects-feed :projects="projects" class="u-padding-bottom-large" />
-    <div class="o-wrapper o-wrapper--large u-margin-top-huge">
+    <div
+      class="o-wrapper o-wrapper--large u-margin-top-huge"
+      data-aos="fade-up"
+    >
       <div class="o-layout o-layout--huge">
         <div class="o-layout__item u-2/5@tablet">
           <h3>{{ about.title }}</h3>

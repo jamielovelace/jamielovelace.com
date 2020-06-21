@@ -41,7 +41,7 @@ export default {
   padding: var(--spacing) var(--spacing-large) var(--spacing) 0;
   display: flex;
   @include mq($until: smallDesktop) {
-    padding: var(--spacing) 0 var(--spacing-huge);
+    padding: var(--spacing) 0 var(--spacing-enourmous);
     overflow-x: auto;
     overflow-y: visible;
     scroll-snap-type: mandatory;
@@ -75,7 +75,7 @@ export default {
   @include mq($until: smallDesktop) {
     position: relative;
     z-index: 1;
-    margin-top: calc(var(--spacing-large) * -1);
+    margin-top: calc(var(--spacing-huge) * -1);
     margin-bottom: var(--spacing-large);
   }
 

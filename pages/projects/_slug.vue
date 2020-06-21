@@ -4,6 +4,9 @@
       <template #title>
         {{ project.title }}
       </template>
+      <template #content>
+        <p>{{ project.description }}</p>
+      </template>
     </hero-banner>
     <slices
       v-for="(slice, index) in project.sections"

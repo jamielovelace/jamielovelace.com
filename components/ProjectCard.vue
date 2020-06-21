@@ -109,10 +109,12 @@ export default {
   }
 
   &:hover {
-    box-shadow: 0 1.9px 2.2px rgba(0, 0, 0, 0.017),
-      0 4.7px 5.3px rgba(0, 0, 0, 0.024), 0 8.8px 10px rgba(0, 0, 0, 0.03),
-      0 15.6px 17.9px rgba(0, 0, 0, 0.036), 0 29.2px 33.4px rgba(0, 0, 0, 0.043),
-      0 70px 80px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 1.4px 1.7px -10px rgba(0, 0, 0, 0.02),
+      0 3.3px 4px -10px rgba(0, 0, 0, 0.028),
+      0 6.3px 7.5px -10px rgba(0, 0, 0, 0.035),
+      0 11.2px 13.4px -10px rgba(0, 0, 0, 0.042),
+      0 20.9px 25.1px -10px rgba(0, 0, 0, 0.05),
+      0 50px 60px -10px rgba(0, 0, 0, 0.07);
 
     transform: scale(1.02);
   }

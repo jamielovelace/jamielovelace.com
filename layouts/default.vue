@@ -29,9 +29,11 @@ export default {
 }
 
 img[lazy] {
-  transition: filter 0.5s ease-out;
+  transition: filter 0.2s ease;
 }
 img[lazy='loading'] {
-  filter: blur(10px);
+  width: 100%;
+  height: auto;
+  filter: blur(5px);
 }
 </style>

@@ -1,0 +1,11 @@
+.c-styled-image {
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  box-shadow:
+    0 1.4px 1.8px -19px rgba(0, 0, 0, 0.028),
+    0 3.6px 4.5px -19px rgba(0, 0, 0, 0.04),
+    0 7.4px 9.2px -19px rgba(0, 0, 0, 0.05),
+    0 15.3px 19px -19px rgba(0, 0, 0, 0.062),
+    0 42px 52px -19px rgba(0, 0, 0, 0.09)
+  ;
+}

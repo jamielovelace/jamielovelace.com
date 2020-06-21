@@ -1,21 +1,31 @@
 <template>
   <div>
     <hero-banner>
-      <template v-slot:title>
+      <template #title>
         About me
       </template>
-      <template v-slot:content>
+      <template #content>
         <p>
           I’m product designer and front end developer based in Southsea. I’m
           currently a part of the Akero team building out a CRM and advertising
           platform aimed primarily at the education sector.
         </p>
       </template>
-      <template v-slot:image>
+      <template #image>
         <div class="c-image-grid">
-          <img src="~/assets/images/test.jpg" />
-          <img src="~/assets/images/test.jpg" />
-          <img src="~/assets/images/test.jpg" />
+          <div
+            v-for="(img, index) in bannerImages"
+            :key="img.alt"
+            data-aos="zoom-in"
+            :data-aos-delay="200 + index * 50"
+          >
+            <img
+              class="c-styled-image"
+              :srcset="img.sizes.srcSet"
+              :src="img.src"
+              :alt="img.alt"
+            />
+          </div>
         </div>
       </template>
     </hero-banner>
@@ -35,6 +45,33 @@ import heroBanner from '~/components/HeroBanner.vue'
 export default {
   components: {
     heroBanner
+  },
+  data() {
+    return {
+      bannerImages: [
+        {
+          alt: 'me in yosemite',
+          webp: require('~/assets/images/me_yosemite.jpg?webp'),
+          lqip: require('~/assets/images/me_yosemite.jpg?resize&size=50'),
+          sizes: require('~/assets/images/me_yosemite.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000'),
+          src: require('~/assets/images/me_yosemite.jpg')
+        },
+        {
+          alt: 'me',
+          webp: require('~/assets/images/me.jpg?webp'),
+          lqip: require('~/assets/images/me.jpg?resize&size=50'),
+          sizes: require('~/assets/images/me.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000'),
+          src: require('~/assets/images/me.jpg')
+        },
+        {
+          alt: 'me in tokyo',
+          webp: require('~/assets/images/me_tokyo.jpg?webp'),
+          lqip: require('~/assets/images/me_tokyo.jpg?resize&size=50'),
+          sizes: require('~/assets/images/me_tokyo.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000'),
+          src: require('~/assets/images/me_tokyo.jpg')
+        }
+      ]
+    }
   }
 }
 </script>

@@ -4,15 +4,15 @@
       <div class="c-hero-banner__body">
         <h1
           class="c-hero-banner__title"
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-delay="100"
         >
           <slot name="title" />
         </h1>
         <div
           class="c-hero-banner__content c-user-content"
-          data-aos="fade-left"
-          data-aos-delay="200"
+          data-aos="fade-up"
+          data-aos-delay="150"
         >
           <slot name="content" />
         </div>
@@ -34,7 +34,6 @@
   }
 
   &__inner {
-    display: flex;
     max-width: 1300px;
     width: 100%;
     margin-left: auto;
@@ -42,14 +41,21 @@
     padding-left: var(--spacing);
     padding-top: var(--spacing-large);
     padding-bottom: var(--spacing-huge);
-    @include mq($from: smallDesktop) {
+    @include mq($from: tablet) {
+      display: flex;
+      align-items: center;
       padding-left: var(--spacing-large);
     }
   }
 
   &__body {
-    max-width: 800px;
     flex-shrink: 0;
+    @include mq($from: tablet) {
+      max-width: 50%;
+    }
+    @include mq($from: desktop) {
+      max-width: 800px;
+    }
   }
   &__title {
     font-size: var(--text-collosal);
@@ -59,12 +65,14 @@
   &__content {
     color: var(--color-light);
     font-size: var(--text-default);
+    margin-right: var(--spacing);
     max-width: 550px;
   }
 
   &__images {
     flex-grow: 1;
     flex-shrink: 1;
+    padding-right: var(--spacing-small);
   }
 }
 </style>
