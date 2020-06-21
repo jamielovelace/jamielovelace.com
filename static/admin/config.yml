@@ -27,7 +27,15 @@ collections:
           default: ['Front-end Development'],
         }
       - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Featured Image', name: 'feature_image', widget: 'image' }
+      - {
+          label: 'Featured Image (on card)',
+          name: 'feature_image',
+          widget: 'image',
+        }
+      - label: 'Banner Images'
+        name: 'banner_images'
+        widget: 'image'
+        field: { label: Image, name: image, widget: image }
       - label: 'Content'
         name: 'sections'
         widget: 'list'
