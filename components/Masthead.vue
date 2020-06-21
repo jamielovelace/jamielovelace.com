@@ -55,7 +55,7 @@ export default {
   }
 
   &__logo {
-    width: 60px;
+    width: 70px;
     flex-shrink: 1;
 
     @include mq($from: smallTablet) {
@@ -74,7 +74,7 @@ export default {
   &__nav {
     margin-left: auto;
     @include mq($until: smallTablet) {
-      font-size: 85%;
+      font-size: 80%;
     }
 
     ul {

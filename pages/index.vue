@@ -2,9 +2,7 @@
   <div>
     <hero-banner>
       <template #title>
-        Front End Developer &amp;
-        <br />
-        Product Designer
+        Front End Developer &amp; Product Designer
       </template>
       <template #content>
         <p>
@@ -30,13 +28,19 @@
       data-aos="fade-up"
     >
       <div class="o-layout o-layout--huge">
-        <div class="o-layout__item u-2/5@tablet">
-          <h3>{{ about.title }}</h3>
-          <p>{{ about.body }}</p>
+        <div class="o-layout__item u-1/2@tablet">
+          <div class="c-user-content">
+            <h3>{{ about.title }}</h3>
+            <p>{{ about.body }}</p>
+            <p>
+              <strong><nuxt-link to="/about">More about me</nuxt-link></strong>
+            </p>
+          </div>
         </div>
-        <div class="o-layout__item u-3/5@tablet">
+        <div class="o-layout__item u-1/2@tablet">
           <div v-lazy-container="{ selector: 'img' }">
             <img
+              class="c-styled-image"
               :data-loading="about.image.lqip"
               :data-srcset="about.image.sizes.srcSet"
               :data-src="about.image.src"
@@ -59,52 +63,6 @@ export default {
   },
   data() {
     return {
-      oldprojects: [
-        {
-          title: 'Akero',
-          tags: ['Product Design', 'Front-end Development', 'UX Research'],
-          description:
-            'CRM & Advertising platform aimed at the education sector. Akero is a large CRM system which includes a form builder, landing page builder, automation and an advertising platform.',
-          slug: 'akero',
-          image: {
-            webp: require('~/assets/images/test.jpg?webp'),
-            lqip: require('~/assets/images/test.jpg?resize&size=50'),
-            sizes: require('~/assets/images/test.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000'),
-            src: require('~/assets/images/test.jpg')
-          }
-        },
-        {
-          title: 'Akero Website',
-          tags: [
-            'Design',
-            'Front-end Development',
-            'Headless CMS',
-            'UX Research'
-          ],
-          description:
-            'CRM & Advertising platform aimed at the education sector. Akero is a large CRM system which includes a form builder, landing page builder, automation and an advertising platform.',
-          slug: 'akero-website',
-          image: {
-            webp: require('~/assets/images/test.jpg?webp'),
-            lqip: require('~/assets/images/test.jpg?lqip'),
-            sizes: require('~/assets/images/test.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000'),
-            src: require('~/assets/images/test.jpg')
-          }
-        },
-        {
-          title: 'Student Hut',
-          tags: ['Redesign', 'Front-end Development', 'UX Research'],
-          description:
-            'Trip Advisor for universities. Student Hut is a website aimed at current, previous and potential students. Students can view reviews and rate all parts of life at uni.',
-          slug: 'student-hut',
-          image: {
-            webp: require('~/assets/images/test.jpg?webp'),
-            lqip: require('~/assets/images/test.jpg?lqip'),
-            sizes: require('~/assets/images/test.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000'),
-            src: require('~/assets/images/test.jpg')
-          }
-        }
-      ],
       about: {
         title: 'About me',
         body:
@@ -126,35 +84,4 @@ export default {
 }
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>
+<style></style>

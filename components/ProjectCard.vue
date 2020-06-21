@@ -105,6 +105,7 @@ export default {
     overflow: hidden;
     img {
       width: 100%;
+      border-radius: var(--border-radius) var(--border-radius) 0 0;
     }
   }
 

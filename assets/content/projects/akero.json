@@ -1,11 +1,7 @@
 {
   "title": "Akero",
   "date": "2020-04-28T06:00:00.000Z",
-  "tags": [
-    "Product Design",
-    "Front-end Development",
-    "UX Research"
-  ],
+  "tags": ["Product Design", "Front-end Development", "UX Research"],
   "description": "CRM & Advertising platform aimed at the education sector. Akero is a large CRM system which includes a form builder, landing page builder, automation and an advertising platform.",
   "body": "## some Post\n\n### Some subheader\n\nLorem ipsum dolor websites amet.\n\n> A blockquote from a wise person.",
   "feature_image": "/uploads/contact.jpg",
@@ -54,8 +50,8 @@
     }
   ],
   "banner_images": [
-    "/uploads/grid.jpg",
+    "/uploads/leads-table.png",
     "/uploads/graph.jpg",
-    "/uploads/leads-table.png"
+    "/uploads/grid.jpg"
   ]
 }

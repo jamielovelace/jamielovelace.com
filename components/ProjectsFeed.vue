@@ -10,7 +10,7 @@
       </div>
       <div class="c-projects-feed__item c-projects-feed__item--spacer"></div>
     </div>
-    <div class="o-wrapper o-wrapper--large c-projects-link">
+    <div class="o-wrapper o-wrapper--large c-projects-link c-user-content">
       <nuxt-link to="/projects">View all projects</nuxt-link>
     </div>
   </div>
@@ -45,13 +45,13 @@ export default {
     overflow-x: auto;
     overflow-y: visible;
     scroll-snap-type: mandatory;
-    scroll-snap-points-x: repeat(70vw);
+    scroll-snap-points-x: repeat(85vw);
     scroll-snap-type: x mandatory;
   }
 
   &__item {
     scroll-snap-align: start;
-    min-width: 70vw;
+    min-width: 85vw;
     padding-left: var(--spacing-large);
     display: flex;
     flex-basis: 0;
@@ -62,7 +62,7 @@ export default {
     }
 
     &--spacer {
-      min-width: 30vw;
+      min-width: 15vw;
       height: 10px;
       @include mq($from: smallDesktop) {
         display: none;
@@ -80,12 +80,7 @@ export default {
   }
 
   a {
-    text-decoration: none;
     font-weight: 900;
-    color: var(--color-dark);
-    &:hover {
-      color: var(--color-primary);
-    }
   }
 }
 </style>

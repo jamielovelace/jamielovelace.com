@@ -51,7 +51,10 @@
   &__body {
     flex-shrink: 0;
     @include mq($from: tablet) {
-      max-width: 50%;
+      max-width: 60%;
+    }
+    @include mq($from: smallDesktop) {
+      max-width: 700px;
     }
     @include mq($from: desktop) {
       max-width: 800px;

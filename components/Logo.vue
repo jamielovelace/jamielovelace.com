@@ -69,6 +69,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .c-logo {
+  width: 100%;
   height: auto;
   fill: var(--color-light);
 
