@@ -32,7 +32,7 @@ export default {
         return {
           webp: require(`~/assets${this.image}?webp`),
           lqip: require(`~/assets${this.image}?resize&size=50`),
-          sizes: require(`~/assets${this.image}?resize&sizes[]=300&sizes[]=600&sizes[]=900&sizes[]=1200`),
+          sizes: require(`~/assets${this.image}?resize&sizes[]=300&sizes[]=600&sizes[]=1000&sizes[]=1300sizes[]=1600`),
           src: require(`~/assets${this.image}`)
         }
       }
