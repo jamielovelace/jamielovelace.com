@@ -36,13 +36,21 @@
     },
     {
       "type": "image",
-      "image": "/uploads/me.jpg",
-      "caption": "test"
+      "image": "/uploads/submissions.jpg",
+      "caption": "Submissions table, filterable down to specific campaigns"
     },
     {
       "type": "title_with_pre",
       "pre_title": "Feature",
       "title": "Page Builder"
+    },
+    {
+      "type": "content",
+      "body": "Clients needed a way of building landing pages that their ad's run to. Usually, they'd have to either pay per landing page or get a developer to build them. With the landing page builder, clients could quickly put together a landing page along with a form to capture their data.\n\nI decided on the approach of using semi templated blocks which could be an image and text, a banner, etc. This allowed the client to be able to quickly build out pages whilst keeping the design consistent throughout the page. \n\nAfter some feedback and research, clients wanted a few more customisable features so these templated blocks became almost a layout after I added in variable content, where the user could add a text area, form, button, image, divider, or even custom HTML."
+    },
+    {
+      "type": "image",
+      "image": "/uploads/lp-builder.jpg"
     }
   ]
 }
