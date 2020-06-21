@@ -52,5 +52,10 @@
       "type": "image",
       "image": "/uploads/lp-builder.jpg"
     }
+  ],
+  "banner_images": [
+    "/uploads/grid.jpg",
+    "/uploads/graph.jpg",
+    "/uploads/leads-table.png"
   ]
 }
