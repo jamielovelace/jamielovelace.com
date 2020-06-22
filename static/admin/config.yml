@@ -83,3 +83,8 @@ collections:
                   default: 'Feature',
                 }
               - { label: 'Title', name: 'title', widget: 'string' }
+          - label: 'Video'
+            name: 'video'
+            widget: object
+            fields:
+              - { label: 'Video', name: 'video', widget: 'file' }
