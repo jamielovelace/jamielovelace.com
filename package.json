@@ -19,6 +19,7 @@
     "@nuxtjs/markdownit": "^1.2.6",
     "aos": "^2.3.4",
     "core-js": "2",
+    "intersection-observer": "^0.10.0",
     "nuxt": "^2.12.2",
     "typeface-inter": "^3.12.0",
     "v-lazy-image": "^1.4.0",

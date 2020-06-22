@@ -1,7 +1,10 @@
 <template>
   <div class="c-hero-banner">
     <div class="c-hero-banner__inner">
-      <div class="c-hero-banner__body">
+      <div
+        class="c-hero-banner__body"
+        :class="{ 'c-hero-banner__body--full': !hasImage }"
+      >
         <h1
           class="c-hero-banner__title"
           data-aos="fade-up"
@@ -23,6 +26,16 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  computed: {
+    hasImage() {
+      return !!this.$slots.image
+    }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 .c-hero-banner {
@@ -50,14 +63,21 @@
 
   &__body {
     flex-shrink: 0;
+
     @include mq($from: tablet) {
-      max-width: 60%;
-    }
-    @include mq($from: smallDesktop) {
-      max-width: 700px;
+      max-width: 50%;
     }
     @include mq($from: desktop) {
       max-width: 800px;
+    }
+    &--full {
+      max-width: 450px;
+      @include mq($from: tablet) {
+        max-width: 600px;
+      }
+      @include mq($from: desktop) {
+        max-width: 800px;
+      }
     }
   }
   &__title {

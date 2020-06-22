@@ -16,6 +16,7 @@
       v-if="slice.type === 'image_gallery'"
       :content="slice"
     />
+    <slice-video v-if="slice.type === 'video'" :content="slice" />
   </div>
 </template>
 
@@ -27,6 +28,7 @@ import SliceTitle from '~/components/slices/SliceTitle.vue'
 import SliceImage from '~/components/slices/SliceImage.vue'
 import SliceImagesX2 from '~/components/slices/SliceImagesX2.vue'
 import SliceImageGallery from '~/components/slices/SliceImageGallery.vue'
+import SliceVideo from '~/components/slices/SliceVideo.vue'
 
 export default {
   components: {
@@ -36,7 +38,8 @@ export default {
     SliceTitle,
     SliceImage,
     SliceImagesX2,
-    SliceImageGallery
+    SliceImageGallery,
+    SliceVideo
   },
   props: {
     slice: {

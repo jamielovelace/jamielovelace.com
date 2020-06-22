@@ -25,8 +25,13 @@ export default {
   width: 100%;
 
   &__inner {
-    border-top: 95vh solid var(--color-primary);
-    border-right: 150vw solid transparent;
+    border-top: 65vh solid var(--color-primary);
+    border-right: 200vh solid transparent;
+
+    @include mq($from: smallDesktop) {
+      border-top-width: 95vh;
+      border-right-width: 150vw;
+    }
   }
 }
 </style>

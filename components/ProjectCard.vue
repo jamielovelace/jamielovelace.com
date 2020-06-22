@@ -106,6 +106,8 @@ export default {
     img {
       width: 100%;
       border-radius: var(--border-radius) var(--border-radius) 0 0;
+      border: 1px solid var(--color-grey-light);
+      border-bottom: 0;
     }
   }
 
@@ -121,15 +123,17 @@ export default {
   }
 
   &--featured {
-    flex-direction: row;
+    @include mq($from: tablet) {
+      flex-direction: row;
 
-    #{$self}__content {
-      flex-basis: 50%;
-      margin-right: var(--spacing-large);
-    }
+      #{$self}__content {
+        flex-basis: 50%;
+        margin-right: var(--spacing-large);
+      }
 
-    #{$self}__image {
-      width: 50%;
+      #{$self}__image {
+        width: 50%;
+      }
     }
   }
 }

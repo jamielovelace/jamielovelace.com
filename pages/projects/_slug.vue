@@ -8,7 +8,7 @@
         <p>{{ project.description }}</p>
       </template>
       <template #image>
-        <div class="c-image-grid">
+        <div :class="{ 'c-image-grid': bannerImages.length > 1 }">
           <div
             v-for="(img, index) in bannerImages"
             :key="img.alt"
