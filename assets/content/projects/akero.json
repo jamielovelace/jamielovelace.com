@@ -64,6 +64,10 @@
     {
       "type": "content",
       "body": "This then moves on to the platform assets, in which the clients can see exactly what their images will look like on the platforms their ads are running on. The agency can then view these and give suggestions on how their ads could perform better."
+    },
+    {
+      "type": "video",
+      "video": "/uploads/assets.mp4"
     }
   ],
   "banner_images": [
