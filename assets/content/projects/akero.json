@@ -1,7 +1,11 @@
 {
   "title": "Akero",
   "date": "2020-04-28T06:00:00.000Z",
-  "tags": ["Product Design", "Front-end Development", "UX Research"],
+  "tags": [
+    "Product Design",
+    "Front-end Development",
+    "UX Research"
+  ],
   "description": "CRM & Advertising platform aimed at the education sector. Akero is a large CRM system which includes a form builder, landing page builder, automation and an advertising platform.",
   "body": "## some Post\n\n### Some subheader\n\nLorem ipsum dolor websites amet.\n\n> A blockquote from a wise person.",
   "feature_image": "/uploads/contact.jpg",
@@ -47,6 +51,19 @@
     {
       "type": "image",
       "image": "/uploads/lp-builder.jpg"
+    },
+    {
+      "type": "title_with_pre",
+      "pre_title": "Feature",
+      "title": "Advertising Management"
+    },
+    {
+      "type": "content",
+      "body": "Akero is slowly evolving into a full advertising management platform. This was all done in house by the parent agency, but the process was slow, cumbersome, and messy; involving advertising assets and amendments going back and forth on emails, all whilst being updated on Net Suite. So we began to build out a platform that allows clients and the agency to have a more streamlined experience.\n\nThis involved creating a brief form for clients to fill out and then generate a plan based on platform preferences, their target audience, and the type of advertising they are using. Once this is all approved the agency user can start building a media plan, where they'll choose the platform, ad types, and dates the ad's are running. They can view this in a schedule view or the table view so managers can review the media plan as a whole."
+    },
+    {
+      "type": "content",
+      "body": "This then moves on to the platform assets, in which the clients can see exactly what their images will look like on the platforms their ads are running on. The agency can then view these and give suggestions on how their ads could perform better."
     }
   ],
   "banner_images": [
