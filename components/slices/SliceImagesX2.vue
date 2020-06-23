@@ -7,6 +7,9 @@
           :image="content.image"
           :alt="content.caption"
         />
+        <div class="u-margin-top u-text-center u-text-small">
+          {{ content.caption }}
+        </div>
       </div>
       <div class="o-layout__item u-1/2">
         <responsive-image
@@ -14,6 +17,9 @@
           :image="content.image_2"
           :alt="content.caption_2"
         />
+        <div class="u-margin-top u-text-center u-text-small">
+          {{ content.caption_2 }}
+        </div>
       </div>
     </div>
   </div>

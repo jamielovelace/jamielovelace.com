@@ -2,7 +2,7 @@
   <div>
     <div class="c-projects-feed">
       <div
-        v-for="(project, $index) in projects"
+        v-for="(project, $index) in topProjects"
         :key="$index"
         class="c-projects-feed__item"
       >
@@ -28,6 +28,11 @@ export default {
       default: () => {
         return []
       }
+    }
+  },
+  computed: {
+    topProjects() {
+      return this.projects.slice(0, 3)
     }
   }
 }

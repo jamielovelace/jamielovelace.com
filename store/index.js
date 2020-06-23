@@ -4,7 +4,7 @@ export const state = () => ({
 
 export const mutations = {
   SET_PROJECTS(state, list) {
-    state.projects = list
+    state.projects = list.sort((a, b) => new Date(a.date) - new Date(b.date))
   }
 }
 

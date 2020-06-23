@@ -3,6 +3,17 @@
   "date": "2020-05-03T10:29:26.091Z",
   "title": "Student Hut",
   "description": "Trip Advisor for universities. Student Hut is a website aimed at current, previous and potential students. Students can view reviews and rate all parts of life at uni. ",
-  "feature_image": "/uploads/studenthut-uni.jpg",
-  "banner_images": ["/uploads/studenthut-uni.jpg"]
+  "feature_image": "/uploads/studenthut-uni.png",
+  "banner_images": ["/uploads/studenthut-uni-banner.png"],
+  "sections": [
+    {
+      "type": "content",
+      "body": "## What is it\n\nStudent Hut is a hub for students to review Universities, Cities, Nightlife and Accomodation. It allows current and graduated students to leave reviews on their University, or City for other potential students to read which helps them make the right decision.\n\nDue to the pandemic, the focus has shifted more toward a mental health hub for students, and research provider for Universities to help make the best decisions for their students.\n\n A Student panel was introduced, where students can collect points in exchange for completing surveys, which in turn they can gain Amazon vouchers."
+    },
+    {
+      "type": "image",
+      "image": "/uploads/studenthut-home.jpg",
+      "caption": "Home page"
+    }
+  ]
 }

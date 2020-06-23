@@ -1,14 +1,10 @@
 {
   "title": "Akero",
   "date": "2020-04-28T06:00:00.000Z",
-  "tags": [
-    "Product Design",
-    "Front-end Development",
-    "UX Research"
-  ],
+  "tags": ["Product Design", "Front-end Development", "UX Research"],
   "description": "CRM & Advertising platform aimed at the education sector. Akero is a large CRM system which includes a form builder, landing page builder, automation and an advertising platform.",
   "body": "## some Post\n\n### Some subheader\n\nLorem ipsum dolor websites amet.\n\n> A blockquote from a wise person.",
-  "feature_image": "/uploads/contact.jpg",
+  "feature_image": "/uploads/contact.png",
   "sections": [
     {
       "type": "content",
@@ -16,7 +12,7 @@
     },
     {
       "type": "dual_images",
-      "image": "/uploads/contact.jpg",
+      "image": "/uploads/contact.png",
       "image_2": "/uploads/lp-builder.jpg",
       "caption": "Singular Contact",
       "caption_2": "Page Builder"
@@ -59,7 +55,19 @@
     },
     {
       "type": "content",
-      "body": "Akero is slowly evolving into a full advertising management platform. This was all done in house by the parent agency, but the process was slow, cumbersome, and messy; involving advertising assets and amendments going back and forth on emails, all whilst being updated on Net Suite. So we began to build out a platform that allows clients and the agency to have a more streamlined experience.\n\nThis involved creating a brief form for clients to fill out and then generate a plan based on platform preferences, their target audience, and the type of advertising they are using. Once this is all approved the agency user can start building a media plan, where they'll choose the platform, ad types, and dates the ads are running. They can view this in a schedule view or the table view so managers can review the media plan as a whole."
+      "body": "Akero is slowly evolving into a full advertising management platform. This was all done in house by the parent agency, but the process was slow, cumbersome, and messy; involving advertising assets and amendments going back and forth on emails, all whilst being updated on Net Suite. So we began to build out a platform that allows clients and the agency to have a more streamlined experience.\n\nThis involved creating a brief form for clients to fill out and then generate a plan based on platform preferences, their target audience, and the type of advertising they are using. Once this is all approved the agency user can start building a media plan, where they'll choose the platform, ad types, and dates the ads are running."
+    },
+    {
+      "type": "image",
+      "image": "/uploads/media-plan.png"
+    },
+    {
+      "type": "content",
+      "body": "They can view this in the table view or a schedule view so managers and clients can review the media plan easily."
+    },
+    {
+      "type": "image",
+      "image": "/uploads/schedule.png"
     },
     {
       "type": "content",
@@ -68,6 +76,14 @@
     {
       "type": "video",
       "video": "/uploads/assets.mp4"
+    },
+    {
+      "type": "content",
+      "body": "## What I've learnt\n\nThis is by far my biggest challenge to date, it involved a lot of UI architecture and made me think about the variety of users and their different needs.\n\nMy biggest take away is you can never know how a user is going to use something until its used. Always a suprise!"
+    },
+    {
+      "type": "content",
+      "body": "## What would I do differently\n\nI'd have loved to get more real user data before implementing some components/features but it often wasn't feasible, due to time on both our side and the users. Getting features shipped fast seemed quite odd sometimes as it might not be the best solution, but thankfully these things can be iterated on over and over."
     }
   ],
   "banner_images": [

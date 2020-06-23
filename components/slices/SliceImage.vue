@@ -5,6 +5,9 @@
       :image="content.image"
       :alt="content.caption"
     />
+    <div class="u-margin-top u-text-center u-text-small">
+      {{ content.caption }}
+    </div>
   </div>
 </template>
 

@@ -63,14 +63,17 @@ export default {
 
   &__body {
     flex-shrink: 0;
-
+    padding-right: var(--spacing);
+    margin-bottom: var(--spacing-huge);
     @include mq($from: tablet) {
-      max-width: 50%;
+      width: 50%;
+      margin-bottom: 0;
     }
     @include mq($from: desktop) {
-      max-width: 800px;
+      width: 45%;
     }
     &--full {
+      width: 100%;
       max-width: 450px;
       @include mq($from: tablet) {
         max-width: 600px;
@@ -88,7 +91,6 @@ export default {
   &__content {
     color: var(--color-light);
     font-size: var(--text-default);
-    margin-right: var(--spacing);
     max-width: 550px;
   }
 
