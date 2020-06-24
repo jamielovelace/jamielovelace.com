@@ -1,9 +1,9 @@
 <template>
   <header class="c-masthead">
-    <nuxt-link to="/">
-      <logo class="c-masthead__logo" />
+    <nuxt-link to="/" class="c-masthead__logo">
+      <logo />
     </nuxt-link>
-    <nav class="c-masthead__nav">
+    <nav class="c-masthead__nav" role="navigation" aria-label="Main">
       <ul class="o-list-inline">
         <li class="o-list-inline__item c-masthead__nav-item">
           <nuxt-link to="/projects" class="c-masthead__nav-link"
@@ -57,6 +57,12 @@ export default {
   &__logo {
     width: 70px;
     flex-shrink: 1;
+    border-radius: var(--border-radius);
+
+    &:focus {
+      outline: 0;
+      background-color: rgba(0, 0, 0, 0.25);
+    }
 
     @include mq($from: smallTablet) {
       width: 80px;
@@ -104,6 +110,10 @@ export default {
 
       &:hover {
         background-color: rgba(0, 0, 0, 0.125);
+      }
+      &:focus {
+        background-color: rgba(0, 0, 0, 0.25);
+        outline: 0;
       }
       &:active {
         transform: scale(0.9);

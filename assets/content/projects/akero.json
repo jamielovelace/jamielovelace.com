@@ -83,7 +83,7 @@
     },
     {
       "type": "content",
-      "body": "## What would I do differently\n\nI'd have loved to get more real user data before implementing some components/features but it often wasn't feasible, due to time on both our side and the users. Getting features shipped fast seemed quite odd sometimes as it might not be the best solution, but thankfully these things can be iterated on over and over."
+      "body": "## What would I do differently\n\nI'd have loved to get more real user data before implementing some components/features but it often wasn't feasible, due to time on both our side and the users. Getting features that aren't quite ready shipped fast seems quite odd sometimes as it might not be the best solution, but thankfully these things can be iterated on over and over.\n\nAnother thing I would've done is include accessibility controls right from the offset, it's often looked over but important and easy to implement."
     }
   ],
   "banner_images": [

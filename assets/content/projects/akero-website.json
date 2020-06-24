@@ -2,7 +2,7 @@
   "tags": ["Design", "Development", "CMS Implementation"],
   "date": "2020-06-01T19:37:11.480Z",
   "title": "Website — Akero",
-  "description": "Marketing website for the Akero Platform",
+  "description": "Marketing website for the Akero Platform, including implementation of a content management system - Prismic.",
   "feature_image": "/uploads/akero-website.jpg",
   "banner_images": ["/uploads/akero-website.jpg"]
 }

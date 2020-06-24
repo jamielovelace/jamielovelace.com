@@ -31,10 +31,50 @@
     </hero-banner>
     <div class="o-wrapper o-wrapper--small c-user-content">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
-        doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur
-        rerum illum odit fugit assumenda rem dolores inventore iste
-        reprehenderit maxime! Iusto.
+        My love for frontend development and product design stemmed from graphic
+        design, I was previously a designer at an agency for 8 years after
+        studying graphic design at college. I got taught the basics of HTML and
+        CSS and went from there.
+      </p>
+
+      <p>
+        I'd call myself a frontend developer but some poeple might call it a UI
+        developer, as I love writing HTML and CSS and building out a fast and
+        responsive UI. I've been using HTML and CSS for well over 10 years now
+        and more involved with javascript or the past 5 years. I have experience
+        in <a href="https://angularjs.org/" target="_blank">AngularJS</a> and
+        more recently <a href="https://vuejs.org/" target="_blank">Vue</a>.
+      </p>
+
+      <p>
+        I still pride myself on writing readable, reusable and maintanable CSS,
+        even if the industry now seems to be more focused on javascript
+        development. I believe a lot of problems can be solved by using a great
+        UI without all the bells and whistles that come with
+        frameworks/libraries. That being said, I use a lot of javascript and
+        frameworks such as Vue and Angular, when necessary, to help build an
+        interactive UI.
+      </p>
+
+      <p>
+        Whilst building out the current project (<nuxt-link to="/projects/akero"
+          >Akero</nuxt-link
+        >), I learnt so much about how important it was to create maintanable
+        CSS and markup, I always find myself looking at something I did 1 year
+        ago wanting to improve it due to learning there's a better way of
+        achieving what I wanted. Whether it being more accessible, less markup,
+        or rendering speed. Iteration is a great thing that I didn't get to
+        experience so much during my graphic design days.
+      </p>
+
+      <h2>Hobbies &amp; Interests</h2>
+
+      <p>
+        I'm very passionate about music, and find myself always on the hunt for
+        a new artist to listen to. My Spotify account definitely gets its
+        money's worth! Another thing I've found myself doing a lot is DIY, and
+        I'll give everything (within reason) a go myself, even if most of the
+        time it ends up costing more money after redoing it a couple of times!
       </p>
     </div>
   </div>
@@ -76,35 +116,4 @@ export default {
 }
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>
+<style></style>

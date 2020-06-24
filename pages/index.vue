@@ -31,7 +31,7 @@
         <div class="o-layout__item u-1/2@tablet">
           <div class="c-user-content">
             <h3>{{ about.title }}</h3>
-            <p>{{ about.body }}</p>
+            <div v-html="about.body"></div>
             <p>
               <strong><nuxt-link to="/about">More about me</nuxt-link></strong>
             </p>
@@ -65,8 +65,11 @@ export default {
     return {
       about: {
         title: 'About me',
-        body:
-          'I’m product designer and front end developer based in Southsea. I’m currently a part of the Akero team building out a CRM and advertising platform aimed primarily at the education sector.',
+        body: `
+          <p>I’m product designer and front end developer based in Southsea. I’m currently a part of the Akero team building out a CRM and advertising platform aimed primarily at the education sector.<p>
+          <p>My primary focus is building a great UI's that are easy, pleasing and fast to use.<p>
+          <p>I'd say I'm an expert in CSS and HTML, since I've been using those both in depth for over 10 years, though recently the focus is more on javascript and frameworks.<p>
+        `,
         image: {
           webp: require('~/assets/images/me.jpg?webp'),
           lqip: require('~/assets/images/me.jpg?resize&size=50'),

@@ -82,7 +82,9 @@ export default {
   transform: scale(1);
   backface-visibility: hidden;
   transition: all 0.2s ease;
+  outline: 0;
   -webkit-font-smoothing: subpixel-antialiased;
+  border: 2px solid transparent;
 
   &__title {
     margin-bottom: var(--spacing-tiny);
@@ -103,6 +105,7 @@ export default {
     margin-top: auto;
     width: 100%;
     overflow: hidden;
+    margin-bottom: -2px;
     img {
       width: 100%;
       border-radius: var(--border-radius) var(--border-radius) 0 0;
@@ -111,7 +114,8 @@ export default {
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: 0 1.4px 1.7px -10px rgba(0, 0, 0, 0.02),
       0 3.3px 4px -10px rgba(0, 0, 0, 0.028),
       0 6.3px 7.5px -10px rgba(0, 0, 0, 0.035),
@@ -120,6 +124,10 @@ export default {
       0 50px 60px -10px rgba(0, 0, 0, 0.07);
 
     transform: scale(1.02);
+  }
+
+  &:focus {
+    border-color: var(--color-secondary);
   }
 
   &--featured {

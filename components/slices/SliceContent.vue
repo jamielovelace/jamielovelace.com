@@ -1,6 +1,6 @@
 <template>
   <div class="o-wrapper o-wrapper--tiny">
-    <div v-html="$md.render(content.body)" />
+    <div class="c-user-content" v-html="$md.render(content.body)" />
   </div>
 </template>
 

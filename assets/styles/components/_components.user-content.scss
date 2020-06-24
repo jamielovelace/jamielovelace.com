@@ -14,5 +14,16 @@
     &:focus {
       background-size: 100% 0.2em, 100% 0.2em;
     }
+    &:focus {
+      outline: 0;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  h2:not(:first-child) {
+    margin-top: var(--spacing-huge);
+  }
+  h3:not(:first-child) {
+    margin-top: var(--spacing-large);
   }
 }
