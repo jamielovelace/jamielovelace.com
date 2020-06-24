@@ -14,7 +14,12 @@
           <nuxt-link to="/about" class="c-masthead__nav-link">About</nuxt-link>
         </li>
         <li class="o-list-inline__item c-masthead__nav-item">
-          <nuxt-link to="/cv" class="c-masthead__nav-link">CV</nuxt-link>
+          <a
+            href="/Jamie Lovelace - CV.pdf"
+            target="_blank"
+            class="c-masthead__nav-link"
+            >Download CV</a
+          >
         </li>
         <li class="o-list-inline__item c-masthead__nav-item">
           <nuxt-link to="/contact" class="c-masthead__nav-link"
