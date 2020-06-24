@@ -1,14 +1,18 @@
 {
   "title": "Akero",
   "date": "2020-04-28T06:00:00.000Z",
-  "tags": ["Product Design", "Front-end Development", "UX Research"],
+  "tags": [
+    "Product Design",
+    "Front-end Development",
+    "UX Research"
+  ],
   "description": "CRM & Advertising platform aimed at the education sector. Akero is a large CRM system which includes a form builder, landing page builder, automation and an advertising platform.",
   "body": "## some Post\n\n### Some subheader\n\nLorem ipsum dolor websites amet.\n\n> A blockquote from a wise person.",
   "feature_image": "/uploads/contact.png",
   "sections": [
     {
       "type": "content",
-      "body": "## What is it\n\nAkero is a suite of tools aimed primarily at Universities and higher education to drive their recruitment process. It includes; a form builder, landing page builder, marketing automation, CRM, advertising management, reporting along with much more.\n\n## My Role\n\nI was hired to be the lead designer and take hold of the frontend as it was not very user focused.\n\n## The product\n\nAbout 6 months into my role the idea of what Akero was had already started to drastically change, it was previously just used for capturing form submissions through Facebook pages. The old design worked just fine for this, but there was going to be a plethora of new features coming so the decision was made to give the platform a redesign.\n\nThe previous design was very design-heavy, so my first thought was to clean it up by reducing the colour palette and removing a lot of the visual noise."
+      "body": "## What is it\n\nAkero is a suite of tools aimed primarily at Universities and higher education to drive their recruitment process. It includes; a form builder, landing page builder, marketing automation, CRM, advertising management, reporting along with much more.\n\n## My Role\n\nI was hired to be the lead designer and take hold of the frontend as it was not very user focused.\n\n## The product\n\nAbout 6 months into my role the idea of what Akero was had already started to drastically change, it was previously just used for capturing form submissions through Facebook pages. The old design worked just fine for this, but there was going to be a plethora of new features coming so the decision was made to give the platform a redesign.\n\nThe previous design was very design-heavy, so my first thought was to clean it up by reducing the colour palette and removing a lot of the visual noise. I also reduced the reliance on icons, a lot of the previous icons had no meaning, making it hard to distinguish what each icon was relating too. \n\nAs far as the front end was concerned, this needed a lot of work, the HTML and CSS was very messy and not very maintanable, I started creating small CSS components, making it easier for developers to start adopting a simpler approach."
     },
     {
       "type": "dual_images",
