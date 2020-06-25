@@ -30,7 +30,7 @@
     },
     {
       "type": "content",
-      "body": "## What I've learnt\n\nNot everything needs to be built with a javascript framework! This quite large site didn't need a large framework even though it was discussed, eventually we passed it over as it didn't particularly need one as data isn't that reactive and reviews are actually approved before going live, so this isn't an issue either."
+      "body": "## What I've learnt\n\nNot everything needs to be built with a javascript framework! This quite large site didn't need a large framework even though it was discussed, eventually we passed on that as it didn't particularly need one as data isn't that reactive and reviews are actually approved before going live, so this isn't an issue either."
     },
     {
       "type": "content",
