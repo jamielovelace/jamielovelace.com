@@ -6,6 +6,16 @@
       </template>
       <template #content>
         <p>{{ project.description }}</p>
+        <p v-if="project.project_link">
+          <a
+            :href="project.project_link"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            <strong>{{ project.project_link_text }}</strong>
+            <icon-external />
+          </a>
+        </p>
       </template>
       <template #image>
         <div :class="{ 'c-image-grid': bannerImages.length > 1 }">
@@ -34,10 +44,12 @@
 </template>
 <script>
 import HeroBanner from '~/components/HeroBanner'
+import IconExternal from '~/components/IconExternal'
 import Slices from '~/components/Slices'
 export default {
   components: {
     HeroBanner,
+    IconExternal,
     Slices
   },
   async asyncData({ params, payload }) {

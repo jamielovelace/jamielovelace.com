@@ -5,7 +5,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: 'Jamie Lovelace — Frontend Developer & Product Designer',
+    title: 'Jamie Lovelace — Front-end Developer & Product Designer',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

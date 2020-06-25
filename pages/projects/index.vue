@@ -5,7 +5,7 @@
         Projects
       </template>
       <template #content>
-        <p>A selection of projects I've worked on recently</p>
+        <p>Products and websites I've worked on recently</p>
       </template>
     </hero-banner>
     <div class="o-wrapper o-wrapper--large">

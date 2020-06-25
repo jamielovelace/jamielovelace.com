@@ -6,7 +6,7 @@
       </template>
       <template #content>
         <p>
-          I’m product designer and front end developer based in Southsea. I’m
+          I’m product designer and front-end developer based in Southsea. I’m
           currently a part of the Akero team building out a CRM and advertising
           platform aimed primarily at the education sector.
         </p>
@@ -31,14 +31,14 @@
     </hero-banner>
     <div class="o-wrapper o-wrapper--small c-user-content">
       <p>
-        My love for frontend development and product design stemmed from graphic
-        design, I was previously a designer at an agency for 8 years after
-        studying graphic design at college. I got taught the basics of HTML and
-        CSS and went from there.
+        My love for front-end development and product design stemmed from
+        graphic design, I was previously a designer at an agency for 8 years
+        after studying graphic design at college. I got taught the basics of
+        HTML and CSS and went from there.
       </p>
 
       <p>
-        I'd call myself a frontend developer but some poeple might call it a UI
+        I'd call myself a front-end developer but some poeple might call it a UI
         developer, as I love writing HTML and CSS and building out a fast and
         responsive UI. I've been using HTML and CSS for well over 10 years now
         and more involved with javascript or the past 5 years. I have experience

@@ -18,7 +18,7 @@
             href="/Jamie Lovelace - CV.pdf"
             target="_blank"
             class="c-masthead__nav-link"
-            >Download CV</a
+            ><span class="c-masthead__nav-extra">Download</span> CV</a
           >
         </li>
         <li class="o-list-inline__item c-masthead__nav-item">
@@ -60,9 +60,11 @@ export default {
   }
 
   &__logo {
-    width: 70px;
+    width: 80px;
     flex-shrink: 1;
     border-radius: var(--border-radius);
+    padding: 5px 8px;
+    margin: -5px -8px;
 
     &:focus {
       outline: 0;
@@ -70,15 +72,15 @@ export default {
     }
 
     @include mq($from: smallTablet) {
-      width: 80px;
-    }
-
-    @include mq($from: tablet) {
       width: 90px;
     }
 
+    @include mq($from: tablet) {
+      width: 100px;
+    }
+
     @include mq($from: desktop) {
-      width: 110px;
+      width: 120px;
     }
   }
 
@@ -101,6 +103,13 @@ export default {
       }
       @include mq($from: smallDesktop) {
         margin-left: var(--spacing);
+      }
+    }
+
+    &-extra {
+      display: none;
+      @include mq($from: smallTablet) {
+        display: inline;
       }
     }
 

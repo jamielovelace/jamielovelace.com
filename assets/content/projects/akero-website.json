@@ -4,5 +4,7 @@
   "title": "Website — Akero",
   "description": "Marketing website for the Akero Platform, including implementation of a content management system - Prismic.",
   "feature_image": "/uploads/akero-website.jpg",
-  "banner_images": ["/uploads/akero-website.jpg"]
+  "banner_images": ["/uploads/akero-website.jpg"],
+  "project_link": "https://akerolabs.com",
+  "project_link_text": "View Website"
 }

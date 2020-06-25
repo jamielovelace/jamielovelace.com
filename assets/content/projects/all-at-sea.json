@@ -4,5 +4,7 @@
   "title": "Website — All At Sea Sailing",
   "description": "Website build for All At Sea Sailing. A charter company that let you sail a yacht in some of the Mediterraneans most beautiful locations.",
   "feature_image": "/uploads/all-at-sea.jpg",
-  "banner_images": ["/uploads/all-at-sea.jpg"]
+  "banner_images": ["/uploads/all-at-sea.jpg"],
+  "project_link": "https://allatseasailing.com",
+  "project_link_text": "View Website"
 }
