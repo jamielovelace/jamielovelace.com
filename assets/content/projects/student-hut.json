@@ -19,7 +19,7 @@
     },
     {
       "type": "content",
-      "body": "## My role\n\nTasked with redesigning and rebuilding the front-end was quite a nice job, due to having maintained this site in the past. The old site was built with drupal and by 5 different development companies, so the front-end was a bit of a state, each page had its own CSS file with IDs for absolutely everything, and nested as much as you can go, making it virtually impossible to maintain.\n\nWe avoided using a framework purposefully for this site, as it wouldve been a bit overkill. The front-end is straight up HTML, CSS and Javascript, which meant page speeds were nice and quick, scoring very highly on Google Page Speed. Recently, however, this has dropped due to an influx of advertisments / tracking scripts being placed on the site for revenue."
+      "body": "## My role\n\nTasked with redesigning and rebuilding the front-end was quite a nice job, due to having maintained this site in the past. The old site was built with drupal and by 5 different development companies, from 3 different countries, so the front-end was... a bit of a state. Each page had its own CSS file with IDs for absolutely everything, nested as much as you can go, making it an absolute nightmare to maintain.\n\nWe avoided using a framework purposefully for this site, as it would've been overkill. The front-end is straight up HTML, CSS and Javascript, which meant page speeds were nice and quick, scoring very highly on Google Page Speed. Recently, however, this has dropped due to an influx of advertisments / tracking scripts being placed on the site for revenue."
     },
     {
       "type": "dual_images",
