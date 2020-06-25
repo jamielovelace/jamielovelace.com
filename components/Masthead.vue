@@ -45,6 +45,7 @@ export default {
   // position: sticky;
   // top: 0;
   // z-index: 2;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   max-width: 1300px;

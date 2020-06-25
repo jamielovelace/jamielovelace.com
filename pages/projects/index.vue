@@ -10,17 +10,15 @@
     </hero-banner>
     <div class="o-wrapper o-wrapper--large">
       <div class="c-projects">
-        <div
+        <article
           v-for="(project, index) in projects"
           :key="index"
           class="c-projects__item"
           data-aos="fade-up"
         >
           <project-card :project="project" :featured="true"> </project-card>
-        </div>
+        </article>
       </div>
-
-      <div></div>
     </div>
   </div>
 </template>

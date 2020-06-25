@@ -12,23 +12,6 @@
           <a href="https://twitter.com/jamielovelace/">Twitter</a>
         </p>
       </template>
-      <template #image>
-        <div class="c-image-grid">
-          <div
-            v-for="(img, index) in bannerImages"
-            :key="img.alt"
-            data-aos="zoom-in"
-            :data-aos-delay="200 + index * 50"
-          >
-            <img
-              class="c-styled-image"
-              :srcset="img.sizes.srcSet"
-              :src="img.src"
-              :alt="img.alt"
-            />
-          </div>
-        </div>
-      </template>
     </hero-banner>
   </div>
 </template>

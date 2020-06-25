@@ -1,13 +1,13 @@
 <template>
   <div>
     <div class="c-projects-feed">
-      <div
+      <article
         v-for="(project, $index) in topProjects"
         :key="$index"
         class="c-projects-feed__item"
       >
         <project-card :project="project"> </project-card>
-      </div>
+      </article>
       <div class="c-projects-feed__item c-projects-feed__item--spacer"></div>
     </div>
     <div class="o-wrapper o-wrapper--large c-projects-link c-user-content">

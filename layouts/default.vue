@@ -3,15 +3,20 @@
     <bg :color="color" />
     <masthead />
     <nuxt class="c-main" />
+    <div class="o-wrapper o-wrapper--large c-site-wrap__base">
+      <site-footer />
+    </div>
   </div>
 </template>
 <script>
-import masthead from '~/components/Masthead'
+import Masthead from '~/components/Masthead'
 import bg from '~/components/BandBlock'
+import SiteFooter from '~/components/SiteFooter'
 export default {
   components: {
-    masthead,
-    bg
+    Masthead,
+    bg,
+    SiteFooter
   },
   data() {
     return {
@@ -20,9 +25,14 @@ export default {
   }
 }
 </script>
-<style>
+<style lang="scss">
 .c-site-wrap {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  &__base {
+    margin-top: auto;
+  }
 }
 .c-main {
   padding-bottom: var(--spacing-enourmous);
