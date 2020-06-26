@@ -6,5 +6,11 @@
   "feature_image": "/uploads/all-at-sea.jpg",
   "banner_images": ["/uploads/all-at-sea.jpg"],
   "project_link": "https://allatseasailing.com",
-  "project_link_text": "View Website"
+  "project_link_text": "View Website",
+  "sections": [
+    {
+      "type": "content",
+      "body": "Front end build for All At Sea Sailing, the old site was quite slow in comparison and running on wordpress and the owners never needed to update the site so were happy to go with no CMS.\n\nNuxtJS (an opinionate Vue framework) was used, since it can generate server side whilst keeping pages extremely fast and performant. All the CSS was written from scratch since I tend to avoid frameworks due to bloat."
+    }
+  ]
 }

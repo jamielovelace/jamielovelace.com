@@ -6,5 +6,11 @@
   "feature_image": "/uploads/akero-website.jpg",
   "banner_images": ["/uploads/akero-website.jpg"],
   "project_link": "https://akerolabs.com",
-  "project_link_text": "View Website"
+  "project_link_text": "View Website",
+  "sections": [
+    {
+      "type": "content",
+      "body": "A new website was needed quickly so a framework was considered for speed of getting up and running, we used NuxtJS (an opinionated Vue framework), along with Prismic for the CMS, which is a headless CMS. This allowed me to build, make drastic changes and deploy quickly.\n\nSpeed was at the forefront of the site, since before it was a wordpress theme, with hundreds of plugins. Rebuilding allowed me to strip everything back. The feedback after launch was very positive, especially about the home page in general."
+    }
+  ]
 }
