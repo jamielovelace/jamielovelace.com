@@ -1,4 +1,4 @@
-# Jamie Lovelace personal website
+# Jamie Lovelace personal website [WIP]
 
 Started with https://github.com/xdesro/nuxt-netlify-cms-starter
 
