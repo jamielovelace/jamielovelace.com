@@ -6,13 +6,13 @@
       </template>
       <template #content>
         <p>
-          Currently senior front-end developer at
+          Currently designer at
           <a
             class="c-link"
-            href="https://akerolabs.com"
+            href="https://talkjs.com"
             target="_blank"
             rel="nofollow"
-            >Akero</a
+            >TalkJS</a
           >
         </p>
       </template>

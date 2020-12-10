@@ -7,8 +7,8 @@
       <template #content>
         <p>
           I’m product designer and front-end developer based in Southsea. I’m
-          currently a part of the Akero team building out a CRM and advertising
-          platform aimed primarily at the education sector.
+          currently a part of the TalkJS team which is a tool to build full-featured 
+          chat into your websites and mobile apps.
         </p>
       </template>
       <template #image>
@@ -57,9 +57,9 @@
       </p>
 
       <p>
-        Whilst building out the current project (<nuxt-link to="/projects/akero"
+        Whilst building <nuxt-link to="/projects/akero"
           >Akero</nuxt-link
-        >), I learnt so much about how important it was to create maintanable
+        >, I learnt so much about how important it was to create maintanable
         CSS and markup, I always find myself looking at something I did 1 year
         ago wanting to improve it due to learning there's a better way of
         achieving what I wanted. Whether it being more accessible, less markup,
@@ -72,9 +72,10 @@
       <p>
         I'm very passionate about music, and find myself always on the hunt for
         a new artist to listen to. My Spotify account definitely gets its
-        money's worth! Another thing I've found myself doing a lot is DIY, and
-        I'll give everything (within reason) a go myself, even if most of the
-        time it ends up costing more money after redoing it a couple of times!
+        money's worth! Another thing I've found myself doing a of lot lately, 
+        is DIY, and I'll give everything (within reason) a go myself, even if 
+        most of the time it ends up costing more money after redoing it a 
+        couple of times!
       </p>
     </div>
   </div>
