@@ -6,7 +6,7 @@
       </template>
       <template #content>
         <p>
-          Currently designer at
+          Designer at
           <a
             class="c-link"
             href="https://talkjs.com"

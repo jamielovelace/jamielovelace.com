@@ -7,7 +7,7 @@
       <template #content>
         <p>
           I’m product designer and front-end developer based in Southsea. I’m
-          currently a part of the TalkJS team which is a tool to build full-featured 
+          currently a designer at TalkJS, which is a tool to build full-featured 
           chat into your websites and mobile apps.
         </p>
       </template>
