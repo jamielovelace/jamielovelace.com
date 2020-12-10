@@ -66,9 +66,9 @@ export default {
       about: {
         title: 'About me',
         body: `
-          <p>I’m a product designer and front-end developer based in Southsea. I’m currently a part of the Akero team building out a CRM and advertising platform aimed primarily at the education sector.<p>
+          <p>I’m product designer and front-end developer based in Southsea. I’m currently a designer at TalkJS, which is a tool to build full-featured chat into your websites and mobile apps.<p>
           <p>My primary focus is building a great UI's that are easy, pleasing and fast to use.<p>
-          <p>I'd say I'm an expert in CSS and HTML, since I've been using both in depth for over 10 years, though recently the focus is more on javascript and frameworks.<p>
+          <p>I'd say I'm an expert in CSS and HTML, since I've been using both in depth for over 10 years, though recently, the focus is more on javascript and frameworks.<p>
         `,
         image: {
           webp: require('~/assets/images/me.jpg?webp'),
